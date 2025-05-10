@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend/Lexend-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;    
+    box-shadow: 0 0 10px black;
+}
+
+#header-box{
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    gap: 60px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    width: 240px;
+    height: 40px;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#menu a{
+    font-size: 20px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#sets{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#select-lang{
+    
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: solid 2px black;
+}
+
+#profile p{
+    font-size: 20px;
+    color: black;
+}
+
+/* this-place */
+
+#backtomain{
+    width: 100%;
+    max-width: 1860px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#backtomain a{
+    border: solid 4px orange;
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: orange;
+    transition: 0.5s;
+}
+
+#backtomain a:hover{
+    border: solid 4px orange;
+    color: white;
+    background-color: orange;
+}
+
+#this-place{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    padding: 60px;
+    gap: 60px;
+}
+
+article{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+article img{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+#recommended-artifacts{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#recommended-artifacts a{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+footer nav{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px;
+}
+
+#footer-logo{
+    width: max-content;
+}
+
+#footer-logo img{
+    width: 240px;
+    height: 40px;
+}
+
+#footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#footer-menu li a{
+    font-size: 20px;
+    color: black;
+}
+
+#footer-menu li a:hover{
+    color: #4C92BC;
+    transition: 0.5s;
+}
+
+#partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#partners h1{
+    font-size: 25px;
+    color: black;
+}
+
+#partners span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#partners span img{
+    height: 100px;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#copyright p{
+    font-size: 15px;
+    color: gray;
+}
+
+#copyright span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#copyright span a{
+    font-size: 14px;
+    color: black;
+}
+
+/* modal - click post image */
+
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#modalImage {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 5%;
+}
+
+#closeModal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

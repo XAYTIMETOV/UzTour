@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    padding: 50px;
+}
+
+section {
+    width: 400px;
+    height: max-content;
+    background-color: #dddddd;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+form p {
+    align-self: flex-start;
+    font-size: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: solid 1px gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+form input[type="password"] {
+    padding-right: 30px; /* To accommodate the password visibility icons */
+}
+
+#help-login-btn {
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+#form-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-btns input {
+    padding: 10px 50px;
+}
+
+#register-btn {
+    margin-top: 10px;
+    align-self: center;
+    font-size: 14px;
+}
+
+#form-btns input[type="reset"], #form-btns input[type="submit"] {
+    width: 48%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#add-rasm-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-rasm-btn img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#add-rasm-btn:hover {
+    background-color: #45a049;
+}
+
+#profile-image-preview {
+    max-width: 100%;
+    max-height: 150px;
+    margin-top: 10px;
+}
+
+form div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form div span {
+    width: 100%;
+}
+
+form div textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: solid 1px gray;
+    background-color: white;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+form input[type="file"]:not(:valid) {
+    border: solid 1px red;
+}
